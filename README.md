@@ -1,7 +1,5 @@
 # lektor-google-tag-manager
 
-This plugin is inspired by
-
 This plugin adds support for
 [Google Tag Manager](http://www.google.com/analytics/tag-manager//) to
 [Lektor CMS](https://github.com/lektor/lektor).
@@ -55,5 +53,5 @@ read the [License](https://opensource.org/licenses/BSD-3-Clause).
 
 ## Acknowledgements
 
-This plugin is inspired in
+This plugin is inspired by
 [lektor-google-analytics](//github.com/kmonsoor/lektor-google-analytics).
