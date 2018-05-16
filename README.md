@@ -1,8 +1,7 @@
 # lektor-google-tag-manager
 
-This plugin adds support for
-[Google Tag Manager](http://www.google.com/analytics/tag-manager//) to
-[Lektor CMS](https://github.com/lektor/lektor).
+[![](https://img.shields.io/badge/License-BSD-blue.svg)]((https://opensource.org/licenses/BSD-3-Clause))
++[![Requirements Status](https://requires.io/github/JavierLopezMunoz/lektor-google-tag-manager/requirements.svg?branch=master)](https://requires.io/github/JavierLopezMunoz/lektor-google-tag-manager/requirements/?branch=master)
 
 Once the plugin is enabled, a `generate_google_tag_manager()` function
 is available to be included in target `template` which automatically
