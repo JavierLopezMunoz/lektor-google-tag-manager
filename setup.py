@@ -1,30 +1,33 @@
-from setuptools import setup
+import io
 
+from setuptools import setup, find_packages
+
+with io.open('README.md', 'rt', encoding="utf8") as f:
+    readme = f.read()
 
 setup(
-    name='lektor-google-tag-manager',
-    version='0.1',
-    url='http://github.com/JavierLopezMunoz/lektor-google-tag-manager/',
     author=u'Javier Lopez',
     author_email='javier@lopezmunoz.name',
-    license='BSD',
     description='Adds support for Google Tag Manager to Lektor CMS',
+    keywords='Lektor plugin static-site google-tag-manager',
+    license='BSD',
+    long_description=readme,
+    long_description_content_type='text/markdown',
+    name='lektor-google-tag-manager',
+    packages=find_packages(),
     py_modules=['lektor_google_tag_manager'],
+    url='http://github.com/JavierLopezMunoz/lektor-google-tag-manager/',
+    version='0.1',
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Framework :: Lektor',
+        'Environment :: Web Environment',
+        'Environment :: Plugins',
+        'License :: OSI Approved :: BSD License',
+    ],
     entry_points={
         'lektor.plugins': [
             'google-tag-manager = lektor_google_tag_manager:GoogleTagManagerPlugin',
         ]
     },
-    install_requires=['markupsafe', 'lektor'],
-    classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Environment :: Console',
-        'License :: OSI Approved :: BSD License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Topic :: Internet :: WWW/HTTP',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-    ]
 )
